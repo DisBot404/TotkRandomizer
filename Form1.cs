@@ -23,7 +23,7 @@ namespace TotkRandomizer
             paragliderPatternBox.SelectedIndex = 0;
         }
 
-        private const int GREAT_SKY_ISLANDS_LIGHT_ORBS_COUNT = 4;
+        private const int GREAT_SKY_ISLANDS_LIGHT_ORBS_COUNT = 6;
         private const int TOTAL_LIGHT_ORBS_COUNT = 152;
         private int currentProgress = 0;
         private static int maxProgress = 0;
