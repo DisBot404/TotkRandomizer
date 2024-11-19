@@ -1,6 +1,6 @@
 # TOTK Challenge Mode Randomizer
 
-A modified version of [MelonSpeedrun](https://github.com/MelonSpeedruns) TOTK Randomizer, modified to be fully compatible with challenge mode. Note: If you want the map to be the version from challenge mode, but randomized, you will have to make a romfs with Challenge mode's Banc files, along with the vanilla ones the randomizer looks for, CM's GameData, RESTBL, the bfevfl's the randomizer needs and Zdic.pack from the base game. This is optional, however.
+A modified version of [MelonSpeedrun](https://github.com/MelonSpeedruns)'s TOTK Randomizer, modified to be fully compatible with challenge mode. Note: If you want the map to be the version from challenge mode, but randomized, you will have to make a romfs with Challenge mode's Banc files, along with the vanilla ones the randomizer looks for, CM's GameData, RESTBL, the bfevfl's the randomizer needs and Zdic.pack from the base game. This is optional, however.
 
 ## Table of contents
 
