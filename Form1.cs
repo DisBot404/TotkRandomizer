@@ -25,6 +25,8 @@ namespace TotkRandomizer
 
         private const int GREAT_SKY_ISLANDS_LIGHT_ORBS_COUNT = 6;
         private const int TOTAL_LIGHT_ORBS_COUNT = 152;
+        private const int TOTAL_HEART_CONTAINER_COUNT = 37;
+        private const int TOTAL_STAMINA_VESSEL_COUNT = 10;
         private int currentProgress = 0;
         private static int maxProgress = 0;
 
@@ -159,6 +161,7 @@ namespace TotkRandomizer
                             // Add New Weapons & Attachments
                             if (newEnemyName.StartsWith("Enemy_Bokoblin_") ||
                                 newEnemyName.StartsWith("Enemy_Zonau_Robot_") ||
+                                newEnemyName.StartsWith("Enemy_Zonau_Golem_") ||
                                 newEnemyName.StartsWith("Enemy_Horablin_") ||
                                 newEnemyName.StartsWith("Enemy_Moriblin_") ||
                                 newEnemyName.StartsWith("Enemy_Lizalfos_") ||
@@ -623,6 +626,30 @@ namespace TotkRandomizer
                 if (index != -1)
                 {
                     allChestContents[index] = "Obj_DungeonClearSeal";
+                }
+            }
+
+            // Attempt to add Heart containers in Chests across Hyrule
+            for (int i = 0; i < TOTAL_HEART_CONTAINER_COUNT; i++)
+            {
+                string newHeartContainer = allChestContents.First(i => i.StartsWith("Item_"));
+                int index = allChestContents.IndexOf(newHeartContainer);
+
+                if (index != -1)
+                {
+                    allChestContents[index] = "Obj_HeartUtuwa_A_01";
+                }
+            }
+
+            // Attempt to add stamina vessels in Chests across Hyrule
+            for (int i = 0; i < TOTAL_STAMINA_VESSEL_COUNT; i++)
+            {
+                string newStaminaVessel = allChestContents.First(i => i.StartsWith("Item_"));
+                int index = allChestContents.IndexOf(newStaminaVessel);
+
+                if (index != -1)
+                {
+                    allChestContents[index] = "Obj_StaminaUtuwa_A_01";
                 }
             }
 
