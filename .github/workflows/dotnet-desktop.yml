@@ -2,9 +2,9 @@ name: .NET
 
 on:
   push:
-    branches: [ main ]
+    branches: [ cmrandomizerv2 ]
   pull_request:
-    branches: [ main ]
+    branches: [ cmrandomizerv2 ]
 
 jobs:
   build:
@@ -27,6 +27,6 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: randomizer
-        path: D:/a/TotkRandomizer/TotkRandomizer/latest/**
+        name: cmrandomizerv2
+        path: D:/a/TOTKChallengeModeRandomizer/TOTKChallengeModeRandomizer/latest/**
         if-no-files-found: error
