@@ -15,7 +15,7 @@ A modified version of [MelonSpeedrun](https://github.com/MelonSpeedruns)'s TOTK 
 
 ## Quick start
 
-Head over to the [Actions](https://github.com/mrthethatone/TOTKChallengeModeRandomizer/actions) section and download the latest artifact `randomizer.zip` file (this does actually work here btw). Run it and configure it. Once the randomization process starts, it will create a new `romfs` folder next to the application. Simply install that `romfs` folder just like you would any other mod!
+Head over to the [Actions](https://github.com/mrthethatone/TOTKChallengeModeRandomizer/actions) section and download the latest artifact `cmrandomizer.zip` file (this does actually work here btw). Run it and configure it. Once the randomization process starts, it will create a new `romfs` folder next to the application. Simply install that `romfs` folder just like you would any other mod!
 
 The randomizer works on a real Nintendo Switch console, Ryubing and a certain emulator named after a japanese citrus fruit.
 
