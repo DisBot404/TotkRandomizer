@@ -55,7 +55,7 @@ Feel free to contribute in any way you can! I'm very open to suggestions and ide
 
 * [MelonSpeedruns](https://github.com/MelonSpeedruns/)
 
-* [mr. the](https://github.com/DisBot404)
+* [mr. the](https://github.com/mrthethatone)
 
 ## Copyright and license
 
