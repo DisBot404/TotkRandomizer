@@ -1489,7 +1489,7 @@
             "Enemy_Zonau_Robot_Gold",
         };
 
-        public static List<string> ZonaiReplaceWithList = new List<string>()
+        public static List<string> ZonaiGolemReplaceFromList = new List<string>()
         {
             "Enemy_Zonau_Golem_Dark",
             "Enemy_Zonau_Golem_Middle",
@@ -1498,15 +1498,15 @@
             "Enemy_Zonau_Golem_Junior_ForFirstSmallDungeon",
         };
 
-        public static List<string> ZonaiGolemReplaceFromList = new List<string>()
+        public static List<string> ZonaiGolemReplaceWithList = new List<string>()
         {
-            "Enemy_Zonau_Robot_Dark",
-            "Enemy_Zonau_Robot_Middle",
-            "Enemy_Zonau_Robot_Senior",
-            "Enemy_Zonau_Robot_Gold",
+            "Enemy_Zonau_Golem_Dark",
+            "Enemy_Zonau_Golem_Middle",
+            "Enemy_Zonau_Golem_Senior",
+            "Enemy_Zonau_Golem_Gold",
         };
 
-        public static List<string> ZonaiGolemReplaceWithList = new List<string>()
+        public static List<string> ZonaiReplaceWithList = new List<string>()
         {
             "Enemy_Zonau_Robot_Dark",
             "Enemy_Zonau_Robot_Middle",
