@@ -1491,6 +1491,23 @@
 
         public static List<string> ZonaiReplaceWithList = new List<string>()
         {
+            "Enemy_Zonau_Golem_Dark",
+            "Enemy_Zonau_Golem_Middle",
+            "Enemy_Zonau_Golem_Senior",
+            "Enemy_Zonau_Golem_Gold",
+            "Enemy_Zonau_Golem_Junior_ForFirstSmallDungeon",
+        };
+
+        public static List<string> ZonaiGolemReplaceFromList = new List<string>()
+        {
+            "Enemy_Zonau_Robot_Dark",
+            "Enemy_Zonau_Robot_Middle",
+            "Enemy_Zonau_Robot_Senior",
+            "Enemy_Zonau_Robot_Gold",
+        };
+
+        public static List<string> ZonaiGolemReplaceWithList = new List<string>()
+        {
             "Enemy_Zonau_Robot_Dark",
             "Enemy_Zonau_Robot_Middle",
             "Enemy_Zonau_Robot_Senior",
@@ -1765,7 +1782,21 @@
             "Enemy_Golem_Senior"
         };
 
-        public static List<string> LynelList = new List<string>()
+        public static List<string> LynelReplaceFromList = new List<string>()
+        {
+            "Enemy_Lynel_Junior",
+            "Enemy_Lynel_Middle",
+            "Enemy_Lynel_Boss_Junior",
+            "Enemy_Lynel_Boss_Middle",
+            "Enemy_Lynel_Dark",
+            "Enemy_Lynel_Senior",
+            "Enemy_Lynel_Boss_Dark",
+            "Enemy_Lynel_Boss_Senior",
+            "Enemy_Lynel_Gold",
+            "Enemy_Lynel_Boss_Gold"
+        };
+
+        public static List<string> LynelReplaceWithList = new List<string>()
         {
             "Enemy_Lynel_Dark",
             "Enemy_Lynel_Senior",
@@ -1844,8 +1875,8 @@
             "Enemy_Keese_Swarm_AllDay"
         };
 
-        public static List<List<string>> BasicEnemyList = new List<List<string>>() { ZombieReplaceWithList, TreeList, LittleFroxList, LikeLikeReplaceWithList, BokoblinReplaceWithList, LizalfosReplaceWithList, MoblinReplaceWithList, HoriblinReplaceWithList, PebblitList, ZonaiReplaceWithList, ChuchuReplaceWithList };
-        public static List<List<string>> BossEnemyList = new List<List<string>>() { BokoblinBossReplaceWithList, GleeokList, HinoxReplaceWithList, TalusReplaceWithList, LynelList, FroxList, FluxReplaceWithList };
+        public static List<List<string>> BasicEnemyList = new List<List<string>>() { ZombieReplaceWithList, TreeList, LittleFroxList, LikeLikeReplaceWithList, BokoblinReplaceWithList, LizalfosReplaceWithList, MoblinReplaceWithList, HoriblinReplaceWithList, PebblitList, ZonaiReplaceWithList, ZonaiGolemReplaceWithList, ChuchuReplaceWithList };
+        public static List<List<string>> BossEnemyList = new List<List<string>>() { BokoblinBossReplaceWithList, GleeokList, HinoxReplaceWithList, TalusReplaceWithList, LynelReplaceWithList, FroxList, FluxReplaceWithList };
         public static List<List<string>> FlyingEnemyList = new List<List<string>>() { WizzrobeList, AerocudaReplaceWithList, KeeseReplaceWithList };
         public static List<List<string>> OctarokEnemyList = new List<List<string>>() { OctarokList };
 
@@ -1853,6 +1884,7 @@
         {
             { BokoblinReplaceFromList, BasicEnemyList },
             { ZonaiReplaceFromList, BasicEnemyList },
+            { ZonaiGolemReplaceFromList, BasicEnemyList },
             { MoblinReplaceFromList, BasicEnemyList },
             { HoriblinReplaceFromList, BasicEnemyList },
             { LizalfosReplaceFromList, BasicEnemyList },
@@ -1867,7 +1899,7 @@
             { GleeokList, BossEnemyList },
             { HinoxReplaceFromList, BossEnemyList },
             { TalusReplaceFromList, BossEnemyList },
-            { LynelList, BossEnemyList },
+            { LynelReplaceFromList, BossEnemyList },
             { FroxList, BossEnemyList },
             { FluxReplaceFromList, BossEnemyList },
             { WizzrobeList, FlyingEnemyList },
