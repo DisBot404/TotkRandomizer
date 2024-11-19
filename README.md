@@ -1,6 +1,6 @@
-# TOTK Randomizer Mod
+# TOTK Challenge Mode Randomizer
 
-Just a Randomizer mod I've been working on since TOTK released, following the code and idea of my BOTW one.
+A modified version of [MelonSpeedrun](https://github.com/MelonSpeedruns) TOTK Randomizer, modified to be fully compatible with challenge mode. Note: If you want the map to be the version from challenge mode, but randomized, you will have to make a romfs with Challenge mode's Banc files, along with the vanilla ones the randomizer looks for, CM's GameData, RESTBL, the bfevfl's the randomizer needs and Zdic.pack from the base game. This is optional, however.
 
 ## Table of contents
 
@@ -30,22 +30,32 @@ Here's what's randomized with the latest version of the Randomizer:
  - Enemy Weapons
  - Weapon Attachments
  - Enemy Arrows
+ - Evermeans
+ - Pebblits
+ - Like Likes
+ - Bokoblins
+ - Moblins
+ - Lizalfos
+ - Horiblins
+ - Frox
+ - Gleeoks
  - Taluses
  - Hinoxes
  - Lynels
+ - Captain Constructs
  - Overworld & Shrine Weapons
  - Overworld & Shrine Chest Drops
  - Armors in Chests
 
 ## Contributing
 
-Feel free to contribute in any way you can! I'm very open to suggestions and ideas, as long as they are explained carefully and in detail. Thanks for helping out making this rando a better piece of software!
+Feel free to contribute in any way you can! I'm very open to suggestions and ideas, as long as they are explained carefully and in detail. Thanks for helping out making this rando a better piece of software! (This is a message from Melon, i am open to it too, but any genuine improvements to the randomizer itself, push to him please.)
 
 ## Creators
 
 * [MelonSpeedruns](https://github.com/MelonSpeedruns/)
 
-If I forgot your name, let me know and I'll add you!
+* [mr. the](https://github.com/DisBot404)
 
 ## Copyright and license
 
