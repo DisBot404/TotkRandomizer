@@ -25,6 +25,8 @@ namespace TotkRandomizer
 
         private const int GREAT_SKY_ISLANDS_LIGHT_ORBS_COUNT = 4;
         private const int TOTAL_LIGHT_ORBS_COUNT = 152;
+        private int currentChest = 0;
+        private int chestCount = 1531;
         private int currentProgress = 0;
         private static int maxProgress = 0;
 
@@ -229,21 +231,12 @@ namespace TotkRandomizer
 
                     if (dynamicArray.ContainsKey("Drop__DropActor"))
                     {
-                        string dropValue = actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor"].GetString();
-                        if (dropValue.Equals("KeySmall"))
+                        if (actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor"].Equals("KeySmall"))
                         {
                             return actor;
                         }
 
-                        if (IsSkyIslandOrbChest(hashValue))
-                        {
-                            actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor"] = "Obj_DungeonClearSeal";
-                        }
-                        else
-                        {
-                            actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor"] = allChestContents[0];
-                            allChestContents.RemoveAt(0);
-                        }
+                        actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor"] = ChestList.ChestNumberList[currentChest];
 
                         string newDropActor = actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor"].GetString();
 
@@ -261,6 +254,7 @@ namespace TotkRandomizer
                             actor.GetMap()["Dynamic"].GetMap()["Drop__DropActor_Attachment"] = AttachmentList[0];
                         }
                     }
+                    currentChest++;
                 }
             }
 
@@ -374,6 +368,9 @@ namespace TotkRandomizer
             string minusFieldLargeDungeonPath = Path.Combine(textBox1.Text, "Banc", "MinusField", "LargeDungeon");
             string smallDungeonPath = Path.Combine(textBox1.Text, "Banc", "SmallDungeon");
 
+            currentChest = 0;
+            ChestList.InitChestNumberList(chestCount);
+
             string[] mapFiles = new string[] {
                 mainFieldPath,
                 largeDungeonPath,
@@ -449,6 +446,7 @@ namespace TotkRandomizer
                 {
                     rstbModifiedTable.Add($"Event/EventFlow/{Path.GetFileNameWithoutExtension(eventFile).Replace(".zs", "")}", (uint)modifiedData.Length + 20000);
                 }
+                
             }
 
             // Create New Default Save Data
