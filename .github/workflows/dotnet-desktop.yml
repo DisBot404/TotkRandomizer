@@ -28,5 +28,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: cmrandomizer
-        path: D:/a/TotkRandomizer/TotkRandomizer/latest/**
+        path: D:/a/TOTKChallengeModeRandomizer/TOTKChallengeModeRandomizer/latest/**
         if-no-files-found: error
