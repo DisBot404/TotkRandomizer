@@ -1215,7 +1215,8 @@
             {"SpObj_TiltingDoll_Capsule_A_01", 5},
             {"SpObj_TimerBomb_Capsule_A_01", 5},
             {"SpObj_WindGenerator_Capsule_A_01", 5},
-            //{"Obj_DungeonClearSeal", 150},
+            {"Obj_ArrowBundle_A_01", 100},
+            {"Obj_ArrowBundle_A_02", 50 }
         };
 
         public static List<string> ShieldList = new List<string>()
