@@ -15,9 +15,9 @@ A modified version of [MelonSpeedrun](https://github.com/MelonSpeedruns)'s TOTK 
 
 ## Quick start
 
-Head over to the [Actions](https://github.com/MelonSpeedruns/TotkRandomizer/actions) section and download the latest artifact `randomizer.zip` file. Run it and configure it. Once the randomization process starts, it will create a new `romfs` folder next to the application. Simply install that `romfs` folder just like you would any other mod!
+Head over to the [Releases](https://github.com/DisBot404/TotkRandomizer/releases) section and download the latest artifact `CMRandomizer[INSERT_NUMBER_HERE].zip` file. Run it and configure it. Once the randomization process starts, it will create a new `romfs` folder next to the application. Simply install that `romfs` folder just like you would any other mod!
 
-The randomizer works on a real Nintendo Switch console, Ryujinx and Yuzu.
+The randomizer works on a real Nintendo Switch console, Ryubing and a certain emulator named after a japanese citrus fruit.
 
 If the app doesn't launch for you when double clicking it, then you might be missing the latest [.NET Desktop Runtime 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.3-windows-x64-installer)
 
