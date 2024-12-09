@@ -863,7 +863,7 @@
             "Item_Enemy_915",
             "Item_Enemy_916",
             "Item_Enemy_917",
-            "Item_Enemy_Ganondorf",
+            "Item_Ganondorf",
         };
 
         public static List<string> BowList = new List<string>()
@@ -1246,7 +1246,7 @@
             {"Weapon_Lsword_Ganondorf", 7 },
             {"Weapon_Sword_Ganondorf", 7 },
             {"Weapon_Spear_Ganondorf", 7 },
-            {"Item_Enemy_Ganondorf", 3 },
+            {"Item_Ganondorf", 3 },
         };
 
         public static List<string> ShieldList = new List<string>()
