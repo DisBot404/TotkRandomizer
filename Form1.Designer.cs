@@ -328,12 +328,12 @@
         private TextBox textBox1;
         private Label label1;
         private Button button2;
-        private CheckBox randomizeEnemies;
-        private CheckBox randomizeWeapons;
-        private CheckBox randomizeNature;
-        private CheckBox randomizeParagliderFabric;
-        private CheckBox randomizeChests;
-        private CheckBox test;
+        //private CheckBox randomizeEnemies;
+        //private CheckBox randomizeWeapons;
+        //private CheckBox randomizeNature;
+        //private CheckBox randomizeParagliderFabric;
+        //private CheckBox randomizeChests;
+        //private CheckBox test;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
