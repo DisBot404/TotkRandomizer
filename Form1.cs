@@ -24,7 +24,7 @@ namespace TotkRandomizer
         }
 
         private const int GREAT_SKY_ISLANDS_LIGHT_ORBS_COUNT = 4;
-        private const int TOTAL_LIGHT_ORBS_COUNT = 152;
+        //private const int TOTAL_LIGHT_ORBS_COUNT = 152;
         private int currentChest = 0;
         private int chestCount = 1531;
         private int currentProgress = 0;
@@ -612,7 +612,7 @@ namespace TotkRandomizer
                 allGreatSkyIslandsChestContents[newLightOrb.Key] = "Obj_DungeonClearSeal";
             }
 
-            // Add Light Orbs in Chests across Hyrule
+/*            // Add Light Orbs in Chests across Hyrule
             for (int i = 0; i < TOTAL_LIGHT_ORBS_COUNT - GREAT_SKY_ISLANDS_LIGHT_ORBS_COUNT; i++)
             {
                 string newLightOrb = allChestContents.First(i => i.StartsWith("Item_"));
@@ -622,7 +622,7 @@ namespace TotkRandomizer
                 {
                     allChestContents[index] = "Obj_DungeonClearSeal";
                 }
-            }
+            }*/
 
             // Remove sky islands variable separations
             foreach (KeyValuePair<ulong, string> chest in allGreatSkyIslandsChestContents.Where(x => x.Value != "Obj_DungeonClearSeal"))
@@ -703,10 +703,10 @@ namespace TotkRandomizer
             return mapFileName.StartsWith("StartIsland") || mapFileName.StartsWith("Dungeon060") || mapFileName.StartsWith("Dungeon061") || mapFileName.StartsWith("Dungeon062") || mapFileName.StartsWith("Dungeon063");
         }
 
-        private bool IsSkyIslandOrbChest(ulong hashValue)
+/*        private bool IsSkyIslandOrbChest(ulong hashValue)
         {
             return allGreatSkyIslandsChestContents.ContainsKey(hashValue);
-        }
+        }*/
 
         private List<string> CreateLatestEventNames(string[] allEventFiles)
         {
